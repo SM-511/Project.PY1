@@ -1,0 +1,126 @@
+print("***************************************************************************************************************************************")
+print("*************************************************************** PROJECT 2 *************************************************************")
+print("***************************************************************************************************************************************")
+print("")
+print("******************************  Dear Employees, This Game will Provide you The work load as per your guess  ***************************")
+print("")
+# Taking User Input
+empid=int(input("Dear Employee, Please enter your Employee id (in numbers): "))
+empName=input("Enter your Name Please: ")
+dptName=input("Enter the Department you work in : ")
+FortuneNum=int(input("Enter your FORTUNE NUMBER (1-7 ====> denoting days of week): "))
+#if, elif, else usage
+#------------------------------------------------------------------------  HR -----------------------------------------------------------------
+if(  dptName== "hr" or "HR"):
+    print("***************************************************")
+    print("*                HR Daily Schedule                *")
+    print("***************************************************")
+    print("")
+    if( FortuneNum <=3 ):
+        print(" HI! {empName}, This will be your schedule for today ")
+        print("| Time       | Task Description                |")
+        print("=" * 50)
+        print("| 09:00 AM   | Morning Stand-up Meeting        |")
+        print("| 10:00 AM   | Resume Screening                |")
+        print("| 11:00 AM   | Interview with Candidate A      |")
+        print("| 12:00 PM   | Lunch Break                     |")
+        print("| 01:00 PM   | Review Employee Feedback        |")
+        print("| 02:00 PM   | Team Meeting                    |")
+        print("| 03:00 PM   | Follow-up Emails                |")
+        print("| 04:00 PM   | Training Session Preparation    |")
+        print("| 05:00 PM   | End of Day Wrap-up              |")
+        print("="*50)
+    else:
+      print("exit")
+      print("")
+      if( FortuneNum == "4"or "5" ):
+         print(" HI! {empName}, This will be your schedule for today ")
+         print("| Time       | Task Description                |")
+         print("=" * 50)
+         print("| 09:00 AM   | Morning Stand-up Meeting        |")
+         print("| 10:00 AM   | Resume Screening                |")
+         print("| 11:00 AM   | Interview with Candidate A      |")
+         print("| 12:00 PM   | Lunch Break                     |")
+         print("| 01:00 PM   | Report submission               |")
+         print("| 02:00 PM   | Team Meeting                    |")
+         print("| 03:00 PM   | Follow-up Emails                |")
+         print("")
+         print("******* Yippiieee You will be free at 3 ********")
+         print("="*50)
+      else:
+          print("exit")
+          print("")
+          
+          if( dptName == "hr" or "HR" and FortuneNum == "6" or "7"):
+            print(" HI! {empName}, This will be your schedule for today ")
+            print("| 09:00 AM   | Morning Stand-up Meeting        |")
+            print("| 10:00 AM   | Resume Screening                |")
+            print("| 11:00 AM   | Interview with Candidate A      |")
+            print("| 12:00 PM   | Lunch Break                     |")
+            print("| 01:00 PM   | Follow up with HR team          |")
+            print("")
+            print("******* Yippiieee You will be free at 1 ********")
+            print("="*50)
+          else:
+              print("exit")
+else:
+    print("exit")
+#-------------------------------------------------------------------------- SALES ----------------------------------------------------------------
+    
+if(  dptName== "sales" or "Sales"):
+    print("******************************************************")
+    print("*                Sales Daily Schedule                *")
+    print("******************************************************")
+    print(f"* Employee Name  : {empName}                        *")
+    print(f"* Position       : {dptName} executive              *")
+    print("****************************************************\n")
+
+
+    if( FortuneNum <=3 ):
+        print(" HI! {empName}, This will be your schedule for today ")
+        print("| Time       | Task Description                     |")
+        print("=" * 50)
+        print("| 09:00 AM   | Morning Briefing & Goal Setting      |")
+        print("| 10:00 AM   | Client Meetings and Calls            |")
+        print("| 11:00 AM   | Coffee Break                         |")
+        print("| 12:00 PM   | Prospecting & Follow-ups             |")
+        print("| 01:00 PM   | LUNCH BREAK                          |")
+        print("| 02:00 PM   | Product Demos & Presentations        |")                     
+        print("| 03:00 PM   | Client Follow-ups & Sales Calls      |")
+        print("| 04:00 PM   | Sales Data Entry & CRM Updates       |")
+        print("| 05:00 PM   | End of Day Wrap-up                   |")
+        print("="*50)
+    else:
+        print("exit")
+        print("")
+        
+        if( FortuneNum == "4"or "5" ):
+         print(" HI! {empName}, This will be your schedule for today ")
+         print("| Time       | Task Description                |")
+         print("=" * 50)
+         print("| 09:00 AM   | Morning Stand-up Meeting        |")
+         print("| 10:00 AM   | Resume Screening                |")
+         print("| 11:00 AM   | Interview with Candidate A      |")
+         print("| 12:00 PM   | Lunch Break                     |")
+         print("| 01:00 PM   | Report submission               |")
+         print("| 02:00 PM   | Team Meeting                    |")
+         print("| 03:00 PM   | Follow-up Emails                |")
+         print("")
+         print("******* Yippiieee You will be free at 3 ********")
+         print("="*50)
+        else:
+          print("exit")
+          print("")
+        
+    
+    
+    
+
+
+
+
+
+
+
+
+
