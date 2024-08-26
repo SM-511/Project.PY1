@@ -10,14 +10,40 @@ empName=input("Enter your Name Please: ")
 dptName=input("Enter the Department you work in : ")
 FortuneNum=int(input("Enter your FORTUNE NUMBER (1-7 ====> denoting days of week): "))
 #if, elif, else usage
-#------------------------------------------------------------------------  HR -----------------------------------------------------------------
+#-----------------------------------------------------------------   ABOUT THE GAME    ---------------------------------------------------------
+""" An Employee In order to get his Daily schedule , tries his luck by choosing 1-7 numbers (As days of week) and gets his daily schedule,  
+ the Schedule will be different depending upon different criteria shown below :
+ ===> (1) Department of the employees
+ ===> (2) The Number they have selected 
+ """
+ #----------------------------------------------------------------- ABOUT THE RESULTS   --------------------------------------------------------
+""" The results of the number being selected are divided into 4 criterias:
+===> (1) Full Day 9 to 5 regular corporate day schedule
+===> (2) 9 to 3 (Early Pack up) i.e. less working hours
+===> (3) 9 to 1 (super early packup) 
+===> (4) double work
+"""
+#------------------------------------------------------ Game fully works on the input given by the user ---------------------------------------
+""" FUNCTIONALITIES USED TO MAKE THE GAME :
+===> (1) input method
+===> (2) if
+===> (3) nested if
+===> (4) nested else
+===> (5) else
+===> (6) print"""
+ 
+#------------------------------------------------------------------------  HR ------------------------------------------------------------------
+
 if(  dptName== "hr" or "HR"):
-    print("***************************************************")
-    print("*                HR Daily Schedule                *")
-    print("***************************************************")
+    print("******************************************************")
+    print("*                Sales Daily Schedule                *")
+    print("******************************************************")
+    print(f"* Employee Name  : {empName}                        *")
+    print(f"* Position       : {dptName} executive              *")
+    print("****************************************************\n")
     print("")
     if( FortuneNum <=3 ):
-        print(" HI! {empName}, This will be your schedule for today ")
+        
         print("| Time       | Task Description                |")
         print("=" * 50)
         print("| 09:00 AM   | Morning Stand-up Meeting        |")
@@ -30,11 +56,12 @@ if(  dptName== "hr" or "HR"):
         print("| 04:00 PM   | Training Session Preparation    |")
         print("| 05:00 PM   | End of Day Wrap-up              |")
         print("="*50)
+        print("submit Reports on the assigned Email : Wipro2024@gmail.com")
     else:
-      print("exit")
+      print("Bad Luck...... DOUBLE WORK TODAY")
       print("")
       if( FortuneNum == "4"or "5" ):
-         print(" HI! {empName}, This will be your schedule for today ")
+         
          print("| Time       | Task Description                |")
          print("=" * 50)
          print("| 09:00 AM   | Morning Stand-up Meeting        |")
@@ -47,12 +74,13 @@ if(  dptName== "hr" or "HR"):
          print("")
          print("******* Yippiieee You will be free at 3 ********")
          print("="*50)
+         print("submit Reports on the assigned Email : Wipro2024@gmail.com")
       else:
-          print("exit")
+          print("Bad Luck...... DOUBLE WORK TODAY")
           print("")
           
           if( dptName == "hr" or "HR" and FortuneNum == "6" or "7"):
-            print(" HI! {empName}, This will be your schedule for today ")
+           
             print("| 09:00 AM   | Morning Stand-up Meeting        |")
             print("| 10:00 AM   | Resume Screening                |")
             print("| 11:00 AM   | Interview with Candidate A      |")
@@ -61,10 +89,11 @@ if(  dptName== "hr" or "HR"):
             print("")
             print("******* Yippiieee You will be free at 1 ********")
             print("="*50)
+            print("submit Reports on the assigned Email : Wipro2024@gmail.com")
           else:
-              print("exit")
+              print("Bad Luck...... DOUBLE WORK TODAY")
 else:
-    print("exit")
+    print("Bad Luck...... DOUBLE WORK TODAY")
 #-------------------------------------------------------------------------- SALES ----------------------------------------------------------------
     
 if(  dptName== "sales" or "Sales"):
@@ -77,7 +106,6 @@ if(  dptName== "sales" or "Sales"):
 
 
     if( FortuneNum <=3 ):
-        print(" HI! {empName}, This will be your schedule for today ")
         print("| Time       | Task Description                     |")
         print("=" * 50)
         print("| 09:00 AM   | Morning Briefing & Goal Setting      |")
@@ -90,12 +118,13 @@ if(  dptName== "sales" or "Sales"):
         print("| 04:00 PM   | Sales Data Entry & CRM Updates       |")
         print("| 05:00 PM   | End of Day Wrap-up                   |")
         print("="*50)
+        print("submit Reports on the assigned Email : Wipro2024@gmail.com")
     else:
-        print("exit")
+        print("Bad Luck...... DOUBLE WORK TODAY")
         print("")
         
         if( FortuneNum == "4"or "5" ):
-         print(" HI! {empName}, This will be your schedule for today ")
+        
          print("| Time       | Task Description                |")
          print("=" * 50)
          print("| 09:00 AM   | Morning Stand-up Meeting        |")
@@ -108,10 +137,92 @@ if(  dptName== "sales" or "Sales"):
          print("")
          print("******* Yippiieee You will be free at 3 ********")
          print("="*50)
+         print("submit Reports on the assigned Email : Wipro2024@gmail.com")
         else:
-          print("exit")
+          print("Bad Luck...... DOUBLE WORK TODAY")
           print("")
+          if( dptName == "sales" or "Sales" and FortuneNum == "6" or "7"):
+           
+            print("| 09:00 AM   | Morning Stand-up Meeting        |")
+            print("| 10:00 AM   | Resume Screening                |")
+            print("| 11:00 AM   | Interview with Candidate A      |")
+            print("| 12:00 PM   | follow up with Sales team       |")
+            print("| 01:00 PM   | wrap up                         |")
+            print("")
+            print("******* Yippiieee You will be free at 1 ********")
+            print("="*50)
+            print("submit Reports on the assigned Email : Wipro2024@gmail.com")
+          else:
+              print("exit")
+else:
+    print("Bad Luck...... DOUBLE WORK TODAY")
+
+#-------------------------------------------------------------------- MARKETING ----------------------------------------------------------------------------
+if(  dptName== "Maketing" or "marketing"):
+    print("******************************************************")
+    print("*              Marketing Daily Schedule              *")
+    print("******************************************************")
+    print(f"* Employee Name  : {empName}                        *")
+    print(f"* Position       : {dptName} executive              *")
+    print("****************************************************\n")
+
+
+    if( FortuneNum <=3 ):
+        print("| Time       | Task Description                     |")
+        print("=" * 50)
+        print("| 09:00 AM   | Morning Check-In & Briefing          |")
+        print("| 10:00 AM   | Social Media Strategy Planning       |")
+        print("| 11:00 AM   | Coffee Break                         |")
+        print("| 12:00 PM   | Content Creation & Design            |")
+        print("| 01:00 PM   | LUNCH BREAK                          |")
+        print("| 02:00 PM   | Email Marketing Campaigns            |")                     
+        print("| 03:00 PM   | Client Follow-ups                    |")
+        print("| 04:00 PM   | project overview meeting             |")
+        print("| 05:00 PM   | End of Day Wrap-up                   |")
+        print("="*50)
+        print("submit Reports on the assigned Email : Wipro2024@gmail.com")
+    else:
+        print("Bad Luck...... DOUBLE WORK TODAY")
+        print("")
         
+        if( FortuneNum == "4"or "5" ):
+        
+         print("| Time       | Task Description                |")
+         print("=" * 50)
+         print("| 09:00 AM   | Morning Check-In & Briefing          |")
+         print("| 10:00 AM   | Social Media Strategy Planning       |")
+         print("| 11:00 AM   | Coffee Break                         |")
+         print("| 12:00 PM   | Content Creation & Design            |")
+         print("| 01:00 PM   | LUNCH BREAK                          |")
+         print("| 02:00 PM   | Email Marketing Campaigns            |")                     
+         print("| 03:00 PM   | wrap up                              |")
+         print("")
+         print("******* Yippiieee You will be free at 3 ********")
+         print("="*50)
+         print("submit Reports on the assigned Email : Wipro2024@gmail.com")
+        else:
+          print("Bad Luck...... DOUBLE WORK TODAY")
+          print("")
+          if( dptName == "sales" or "Sales" and FortuneNum == "6" or "7"):
+           
+            print("| 09:00 AM   | Morning current project Rewiew Meeting      |")
+            print("| 10:00 AM   | Social Media Strategy Planning              |")
+            print("| 11:00 AM   | Content Creation & Design                   |")
+            print("| 12:00 PM   | New project conerence                       |")
+            print("| 01:00 PM   | Wrap up                                     |")
+            print("")
+            print("******* Yippiieee You will be free at 1 ********")
+            print("="*50)
+            print("submit Reports on the assigned Email : Wipro2024@gmail.com")
+          else:
+              print("exit")
+else:
+    print("Bad Luck...... DOUBLE WORK TODAY")
+
+print("----------------------------------------------------------- THANKYOU FOR PLAYING :)------------------------------------------------------------")
+
+              
+              
     
     
     
